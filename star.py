@@ -17,10 +17,30 @@ def fetch(params):
         exit()
 
 
+help = '''
+Find out the total star earned by a github user.
+
+Basic command:
+python star.py theusername
+
+Add printing limit:
+python star.py theusername 5
+'''
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print('No Username provided. Your command should be like below:\npython star.py the_username')
+    if len(sys.argv) == 1:
+        print(help)
         exit()
+
+    limit = None
+
+    if len(sys.argv) == 3:
+        try:
+            limit = int(sys.argv[2])
+        except ValueError:
+            print('Limit must be an integer')
+            exit()
 
     username = sys.argv[1]
 
@@ -45,5 +65,5 @@ if __name__ == "__main__":
 
     print(f'Total ⭐️ {star}')
 
-    for repo, star in sorted(repo_star_map.items(), key=lambda x: x[1], reverse=True):
+    for repo, star in sorted(repo_star_map.items(), key=lambda x: x[1], reverse=True)[:limit]:
         print(f"{repo:-<{highest_name}} ⭐️ {star}")

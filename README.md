@@ -15,3 +15,9 @@ Run the following command:
 ```bash
 python star.py theusername
 ```
+
+You can also add the print limit. For example, printing only top five repos
+
+```bash
+python star.py theusername 5
+```
