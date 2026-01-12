@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="gitstar",
-    version="1.0.0",
+    version="1.0.1",
     author="Imran Pollob",
     author_email="imranpollob@gmail.com",
     description="Find out the total star earned by a github user",

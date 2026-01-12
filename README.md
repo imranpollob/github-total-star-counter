@@ -26,14 +26,14 @@ gitstar <username> <limit>
 
 ### Examples
 
-Get total stars for user `pollmix`:
+Get total stars for user `torvalds`:
 
 ```bash
-gitstar pollmix
+gitstar torvalds
 ```
 
 Get total stars and list top 5 repositories:
 
 ```bash
-gitstar pollmix 5
+gitstar torvalds 5
 ```
