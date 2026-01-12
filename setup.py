@@ -5,13 +5,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="gitstar",
-    version="0.1.0",
-    author="Pollmix",
+    version="1.0.0",
+    author="Imran Pollob",
     author_email="imranpollob@gmail.com",
     description="Find out the total star earned by a github user",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/imranpollob/github-total-star-counter",
+    url="https://github.com/imranpollob/gitstar",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
