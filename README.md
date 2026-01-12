@@ -1,23 +1,39 @@
-# Github Total Star Counter
-Find out the total star earned by a github user.
+# Gitstar
+
+A command-line tool to calculate the total number of stars earned by a GitHub user.
+
+## Installation
+
+Install via pip:
+
+```bash
+pip install gitstar
+```
 
 ## Usage
 
-Clone the repository:
+Basic usage:
 
 ```bash
-git clone https://github.com/pollmix/github-total-star-counter
-cd github-total-star-counter
+gitstar <username>
 ```
 
-Run the following command:
+Limit the output to the top N repositories:
 
 ```bash
-python star.py theusername
+gitstar <username> <limit>
 ```
 
-You can also add the print limit. For example, printing only top five repos
+### Examples
+
+Get total stars for user `pollmix`:
 
 ```bash
-python star.py theusername 5
+gitstar pollmix
+```
+
+Get total stars and list top 5 repositories:
+
+```bash
+gitstar pollmix 5
 ```

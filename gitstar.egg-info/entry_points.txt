@@ -1,0 +1,2 @@
+[console_scripts]
+gitstar = gitstar.core:main
